@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Início - Acessibilidade no Dia a Dia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Atalhos e recursos de acessibilidade (recomendação do eMAG) -->
+  <div id="atalhos">
+    <a href="#conteudo" accesskey="1">Ir para o conteúdo [1]</a>
+    <a href="#menu" accesskey="2">Ir para o menu [2]</a>
+    <a href="#rodape" accesskey="3">Ir para o rodapé [3]</a>
+    <button type="button" onclick="mudarContraste()">Alto contraste</button>
+    <button type="button" onclick="mudarFonte(1)" aria-label="Aumentar letra">A+</button>
+    <button type="button" onclick="mudarFonte(-1)" aria-label="Diminuir letra">A-</button>
+  </div>
+
+  <header>
+    <div class="logo">
+      <img src="logo.svg" alt="">
+      <div>
+        <p class="nome-site">Acessibilidade no Dia a Dia</p>
+        <p class="slogan">Pequenas mudanças, grandes diferenças</p>
+      </div>
+    </div>
+  </header>
+
+  <nav id="menu" aria-label="Menu principal">
+    <ul>
+      <li><a href="index.html" aria-current="page">Início</a></li>
+      <li><a href="mobilidade.html">Mobilidade</a></li>
+      <li><a href="comunicacao.html">Comunicação</a></li>
+      <li><a href="tecnologia.html">Tecnologia assistiva</a></li>
+      <li><a href="contato.html">Contato</a></li>
+      <li><a href="acessibilidade.html">Acessibilidade do site</a></li>
+    </ul>
+  </nav>
+
+  <main id="conteudo">
+    <div class="destaque">
+      <h1>Acessibilidade no dia a dia</h1>
+      <p>Acessibilidade é fazer com que todas as pessoas consigam usar os lugares, os serviços e as informações sem dificuldade.</p>
+      <p>Ela não é só rampa e elevador. Também está na comunicação, na tecnologia e nos sites que usamos todos os dias.</p>
+    </div>
+
+    <h2>Escolha um tema</h2>
+    <ul class="cartoes">
+      <li>
+        <h3><a href="mobilidade.html">Mobilidade</a></h3>
+        <p>Calçadas, piso tátil, rampas e transporte público.</p>
+      </li>
+      <li>
+        <h3><a href="comunicacao.html">Comunicação</a></h3>
+        <p>Libras, legendas, audiodescrição e Braille.</p>
+      </li>
+      <li>
+        <h3><a href="tecnologia.html">Tecnologia assistiva</a></h3>
+        <p>Leitores de tela e recursos do celular.</p>
+      </li>
+    </ul>
+
+    <div class="dica">
+      <h2>Quem se beneficia?</h2>
+      <p>Pessoas com deficiência, pessoas idosas, quem está com o braço engessado, uma mãe com carrinho de bebê... Ou seja, todo mundo.</p>
+    </div>
+  </main>
+
+  <footer id="rodape">
+    <p>Trabalho de Programação Web - TDE de Acessibilidade.</p>
+    <p>Site feito seguindo as recomendações do eMAG (Modelo de Acessibilidade em Governo Eletrônico).</p>
+    <p><a href="#atalhos">Voltar ao topo</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
